@@ -16,7 +16,7 @@ export default function HostOrJoin({ selectedSport }) {
 
       {/* show selected sport name at the top */}
       <h1 className="text-3xl font-extrabold mb-4">
-        {sportDisplay} 🏓
+        {sportDisplay} 
       </h1>
 
       {/* short message below the sport name */}
@@ -29,7 +29,7 @@ export default function HostOrJoin({ selectedSport }) {
         onClick={() => navigate(`/host/${selectedSport}`)}
         className="w-64 py-3 mb-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-lg font-semibold shadow-lg transition-transform active:scale-95"
       >
-        🏐 host a game
+        host a game
       </button>
 
       {/* button for joining a game */}
@@ -37,7 +37,7 @@ export default function HostOrJoin({ selectedSport }) {
         onClick={() => navigate(`/join/${selectedSport}`)}
         className="w-64 py-3 rounded-2xl bg-sky-500 hover:bg-sky-600 text-lg font-semibold shadow-lg transition-transform active:scale-95"
       >
-        🎾 join a game
+        join a game
       </button>
 
       {/* small footer text */}
